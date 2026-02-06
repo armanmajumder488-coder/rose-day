@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Day Wish</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6f2;
+            color: #d63384;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .flowers {
+            display: none;
+            margin-top: 20px;
+        }
+        .flower {
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 3em;
+        }
+        .message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.5em;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #d63384;
+        }
+        .big-heart {
+            font-size: 3em;
+        }
+        .big-rose {
+            display: none;
+            margin-top: 20px;
+            font-size: 5em;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #d63384;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b02a5e;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌹🌸🌺 hello parnaaaaa ami jani toke virtually wish korchi but i am really sorry for thattttt and jani eta khub e lamee but it's the least I can do for my love for upu parna... happyyyy roseee day babyyyyy 🌹</h1>
+    <button id="nextBtn">Next</button>
+    <div class="flowers" id="flowers">
+        <div class="flower" id="flower1">🌹</div>
+        <div class="flower" id="flower2">🌹</div>
+        <div class="flower" id="flower3">🌹</div>
+    </div>
+    <div class="message" id="message1">hii my loveeee ami jani ami tor sathe besi din hoini acchi but ami onek tai attached hoi gecchii I realllyy love youuuu mwahhhh.</div>
+    <div class="message" id="message2">hi babyyyy first rose day amader and ami virtually dicchi etar jonno khoma kore dao......Ajke Rose Day, tai ei golap ta dilam(virtually). Kintu honestly, phool er thekeo beshi special tumi amar kache. Tumi thaklei amar din ta bhal. <div class="big-heart">❤️</div></div>
+    <div class="message" id="message3">I LOVE YOUUUU A LOTTTTTTTT. Ajke special kichu bolte chai na.   Sudhu etai tumi amar life e thakar jonne thank you.</div>
+    <div class="big-rose" id="bigRose">🌹</div>
+
+    <script>
+        document.getElementById('nextBtn').addEventListener('click', function() {
+            document.getElementById('flowers').style.display = 'block';
+            this.style.display = 'none';
+        });
+
+        document.getElementById('flower1').addEventListener('click', function() {
+            document.getElementById('message1').style.display = 'block';
+            checkAllClicked();
+        });
+
+        document.getElementById('flower2').addEventListener('click', function() {
+            document.getElementById('message2').style.display = 'block';
+            checkAllClicked();
+        });
+
+        document.getElementById('flower3').addEventListener('click', function() {
+            document.getElementById('message3').style.display = 'block';
+            checkAllClicked();
+        });
+
+        function checkAllClicked() {
+            if (document.getElementById('message1').style.display === 'block' &&
+                document.getElementById('message2').style.display === 'block' &&
+                document.getElementById('message3').style.display === 'block') {
+                document.getElementById('bigRose').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
